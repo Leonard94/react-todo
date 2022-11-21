@@ -1,0 +1,91 @@
+@import '../../../../scss/variables.scss';
+@import '../../../../scss/typography.scss';
+
+.todo {
+  display: flex;
+  align-items: center;
+
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 1px solid $bg-light;
+  background: $bg-light;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &_completed {
+    background: $bg-second;
+  }
+
+  &_expired .timeEnd {
+    path {
+      stroke: $text-color-danger;
+    }
+
+    ~ span {
+      color: $text-color-danger;
+    }
+  }
+}
+
+.state {
+  margin-right: 20px;
+  cursor: pointer;
+
+  &:hover {
+    path {
+      fill: $bg-accent;
+    }
+  }
+}
+
+.title {
+  @include title;
+
+  margin-bottom: 4px;
+}
+
+.description {
+  @include small;
+
+  margin-bottom: 4px;
+}
+
+.settings {
+  width: 12px;
+  text-align: center;
+
+  margin-left: auto;
+  cursor: pointer;
+
+  &:hover {
+    circle {
+      fill: $bg-accent;
+    }
+  }
+}
+
+.info {
+  display: flex;
+  gap: 20px;
+
+  &_item {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+    position: relative;
+    left: -2px;
+
+    @include small;
+
+    svg {
+      width: 15px;
+
+      path {
+        stroke: $text-color-second;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import '../../scss/variables.scss';
+@import '../../scss/typography.scss';
+
+.input_section {
+  display: flex;
+  margin-bottom: 30px;
+
+  input {
+    width: 100%;
+    padding: 15px 20px;
+    caret-color: $bg-accent;
+
+    border-radius: 10px 0px 0px 10px;
+    background: $bg-light;
+
+    @include title;
+
+    &::placeholder {
+      font-size: 12px;
+      color: $text-color-second;
+      font-weight: 300;
+    }
+
+    &:focus {
+      box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+
+.btn {
+  flex: 0 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0 10px 10px 0;
+  background: $bg-accent;
+
+  &_loading {
+    background: $bg-second;
+
+    svg {
+      animation-name: rotation;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

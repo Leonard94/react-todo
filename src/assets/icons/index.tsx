@@ -1,0 +1,8 @@
+export { ReactComponent as Completed } from './circle_completed.svg'
+export { ReactComponent as UnCompleted } from './circle.svg'
+export { ReactComponent as Settings } from './settings.svg'
+export { ReactComponent as Time } from './time.svg'
+export { ReactComponent as Attachment } from './attachment.svg'
+export { ReactComponent as Delete } from './delete.svg'
+export { ReactComponent as Add } from './plus.svg'
+export { ReactComponent as Loader } from './loader.svg'

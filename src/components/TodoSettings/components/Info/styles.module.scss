@@ -1,0 +1,21 @@
+@import '../../../../scss/typography.scss';
+
+.time_create {
+  @include small;
+
+  margin-bottom: 10px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  
+  @include small;
+
+  &:hover {
+    color: $text-color-danger;
+  }
+}

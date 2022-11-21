@@ -1,0 +1,32 @@
+@import './scss/reset.scss';
+@import './assets/fonts/fonts.scss';
+@import './scss/typography.scss';
+
+* {
+  &::selection {
+    background: $bg-accent;
+  }
+
+  &::-moz-selection {
+    background: $bg-accent;
+  }
+}
+
+#root {
+  height: 100%;
+  
+  @include base;
+}
+
+.app {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  height: 100%;
+}
+
+.container {
+  max-width: 630px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+

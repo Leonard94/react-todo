@@ -1,0 +1,27 @@
+@import '../../../../scss/typography.scss';
+@import '../../../../scss/variables.scss';
+
+.file {
+  @include small;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  input {
+    width: 100%;
+    padding: 15px 0px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    @include title;
+  }
+
+  a {
+    @include small;
+
+    &:hover {
+      color: $text-color-accent;
+    }
+  }
+}

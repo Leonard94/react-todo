@@ -1,0 +1,42 @@
+@import '../scss/variables.scss';
+
+@mixin base {
+  font-family: 'Inter';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
+  color: $text-color-main;
+}
+
+@mixin h1 {
+  font-family: 'Inter';
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+  color: $text-color-main;
+}
+
+@mixin link {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  color: $text-color-main;
+}
+
+@mixin title {
+  font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+  color: $text-color-main;
+}
+
+@mixin small {
+  font-family: 'Inter';
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 120%;
+  color: $text-color-second;
+}
+

@@ -1,0 +1,19 @@
+@import '../../../../scss/typography.scss';
+
+.input_section {
+  @include small;
+
+  input {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    @include title;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,47 @@
+.skeleton {
+  position: relative;
+  height: 270px;
+  background-color: #ffffff;
+  border-radius: 0px 0px 0px 0px;
+  background-image: linear-gradient(#e5e5e5 20px, transparent 0),
+    radial-gradient(circle 14px at 14px 14px, #e5e5e5 13px, transparent 14px);
+  background-repeat: repeat-y;
+  background-size: 300px 70px, 28px 70px;
+  background-position: 70px 25px, 20px 20px;
+
+  &:before {
+    content: ' ';
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 270px;
+    -webkit-mask-image: linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%
+    );
+    -webkit-mask-repeat: repeat-y;
+    -webkit-mask-size: 50px 270px;
+    -webkit-mask-position: -20% 0;
+    background-image: linear-gradient(
+        rgba(189, 189, 189, 1) 20px,
+        transparent 0
+      ),
+      radial-gradient(
+        circle 14px at 14px 14px,
+        rgba(189, 189, 189, 1) 13px,
+        transparent 14px
+      );
+    background-repeat: repeat-y;
+    background-size: 300px 70px, 28px 70px;
+    background-position: 70px 25px, 20px 20px;
+    animation: shineForSkeleton-7if1r5ctkmg 2s infinite;
+  }
+}
+
+@keyframes shineForSkeleton-7if1r5ctkmg {
+  to {
+    -webkit-mask-position: 120% 0;
+  }
+}
